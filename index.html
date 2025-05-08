@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Interactive Web </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Webpage 🎉</h1>
+
+  <h2>Event Handling</h2>
+  <button id="clickBtn" class="btn">Click Me</button>
+  <p id="clickMessage"></p>
+
+  <h2>Keypress Detection</h2>
+  <input type="text" id="keypressInput" placeholder="Type something..." />
+  <p id="keypressDisplay"></p>
+
+  <h2>Secret Box</h2>
+  <div id="secretBox" class="secret-box">
+    Double-click or long press me!
+  </div>
+  <p id="secretMessage"></p>
+
+  <h2>Interactive Elements</h2>
+  <button id="colorChangeBtn" class="btn">Change My Color</button>
+
+  <div class="gallery">
+    <img src="img1.jpg" alt="img1" />
+    <img src="img2.jpg" alt="img2" />
+    <img src="img3.jpg" alt="img3" />
+  </div>
+
+  <div class="tab-buttons">
+    <button onclick="showTab(0)">Tab 1</button>
+    <button onclick="showTab(1)">Tab 2</button>
+  </div>
+  <div class="tabs">
+    <div class="tab active">This is content for Tab 1</div>
+    <div class="tab">This is content for Tab 2</div>
+  </div>
+
+  <h2>Form Validation</h2>
+  <form id="myForm">
+    <label>Email: <input type="email" id="email" required /></label>
+    <span id="emailFeedback"></span><br /><br />
+
+    <label>Password: <input type="password" id="password" required /></label>
+    <span id="passFeedback"></span><br /><br />
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
